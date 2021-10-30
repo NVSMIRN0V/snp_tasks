@@ -8,6 +8,3 @@ def date_in_future(days):
     else:
         future_date = (datetime.datetime.today() + datetime.timedelta(days=days)).strftime('%d-%m-%Y %H:%M:%S')
         print(future_date)
-
-
-date_in_future(0)

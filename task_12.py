@@ -36,12 +36,3 @@ class JellyBean(Dessert):
 
     def is_delicious(self):
         return not self._flavor == 'black licorice'
-
-
-apple = Dessert()
-print(apple._get_name(), apple._get_calories())
-
-icecream = JellyBean('JONNY', 0, 'black licorice')
-icecream._set_flavor('idk')
-icecream._set_name('Margo')
-print(icecream._get_name(), icecream.is_healthy())

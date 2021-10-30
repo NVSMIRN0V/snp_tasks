@@ -20,8 +20,3 @@ class Dessert:
 
     def is_delicious(self):
         return True
-
-
-apple = Dessert('apple')
-apple._set_name('icecream')
-print(apple._get_name())

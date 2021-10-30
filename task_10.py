@@ -21,8 +21,3 @@ def count_words(string):
         result_dict[word] = result_array.count(word)
 
     return result_dict
-
-
-# => {"a": 3, "man": 1,"canal": 1, "panama": 1, "plan": 1}
-print(count_words("A man, a plan, a canal -- Panama"))
-print(count_words("Doo bee doo bee doo"))  # => {"doo": 3, "bee": 2}

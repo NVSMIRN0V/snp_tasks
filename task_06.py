@@ -26,15 +26,13 @@ def rps_game_winner(play_list):
         if len(play_list) != 2:
             raise WrongNumberOfPlayersError()
         elif not decision_player_1 in decisions or not decision_player_2 in decisions:
-            raise NoSuchStrategyError(
-                'Убедитесь в корректности выбора игрока.')
+            raise NoSuchStrategyError('Убедитесь в корректности выбора игрока.')
     except WrongNumberOfPlayersError as error:
         print(error)
     except NoSuchStrategyError as error:
         print(error)
     else:
-        determine_the_winner(player_1, player_2,
-                             decision_player_1, decision_player_2)
+        determine_the_winner(player_1, player_2, decision_player_1, decision_player_2)
 
 
 def determine_the_winner(player_1, player_2, decision_player_1, decision_player_2):
@@ -48,12 +46,3 @@ def determine_the_winner(player_1, player_2, decision_player_1, decision_player_
         print(player_2, decision_player_2)  # play_list[1] ?
     else:
         print(player_1, decision_player_1)
-
-
-# => WrongNumberOfPlayersError
-rps_game_winner([['player1', 'P'], ['player2', 'S'], ['player3', 'S']])
-rps_game_winner([['player1', 'P'], ['player2', '']])  # => NoSuchStrategyError
-rps_game_winner([['player1', 'P'], ['player2', 'S']])  # => 'player2 S'
-rps_game_winner([['player1', 'P'], ['player2', 'P']])  # => 'player1 P'
-
-# rock scissors paper

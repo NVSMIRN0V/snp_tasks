@@ -45,14 +45,3 @@ def connect_dicts(dict_1, dict_2):
         result_dict = sort_dict(connection(dict_1, dict_2))
 
     return result_dict
-
-
-dict_1 = {"a": 26, "b": 12, 'c' : '22'}
-dict_2 = {"c": 72, "a": '25.0', 'd' : 35}
-print(connect_dicts(dict_1, dict_2)) 
-# => { "c": 11, "b": 12 }
-print(connect_dicts({"a": 2, "b": 12}, {"c": 11, "e": 5}))
-# => { d: 11, "c": 12, "a": 13 }
-print(connect_dicts({"a": 13, "b": 9, "d": 11}, {"c": 12, "a": 15}))
-# => { "c": 11, "b": 12, "a": 15 }
-print(connect_dicts({"a": 14, "b": 12}, {"c": 11, "a": 15}))
