@@ -16,11 +16,3 @@ def is_palindrome(sentence):
                 end_of_line -= 1
         return True
 
-
-print(1, is_palindrome("LEvEL"))
-print(2, is_palindrome("A man, a plan, a canal -- Panama"))
-print(3, is_palindrome("Madam, I'm Adam!"))
-print(4, is_palindrome(333))
-print(5, is_palindrome("333"))
-print(6, is_palindrome(None))
-print(7, is_palindrome("Abraca7778876dabra"))
