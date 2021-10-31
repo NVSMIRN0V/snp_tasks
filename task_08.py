@@ -11,4 +11,3 @@ def multiply_numbers(inputs=None):
         result = tmp_result
         
     return result
-
