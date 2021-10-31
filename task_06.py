@@ -14,9 +14,9 @@ def rps_game_winner(play_list):
     decision_player_1, decision_player_2 = play_list[0][1], play_list[1][1]
 
     if len(play_list) != 2:
-        raise WrongNumberOfPlayersError('Количество игроков не соответствует правилам игры.')
+        raise WrongNumberOfPlayersError
     elif not decision_player_1 in decisions or not decision_player_2 in decisions:
-        raise NoSuchStrategyError('Убедитесь в корректности выбора игрока.')
+        raise NoSuchStrategyError
     else:
        return determine_the_winner(player_1, player_2, decision_player_1, decision_player_2)
 
