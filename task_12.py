@@ -3,16 +3,16 @@ class Dessert:
         self.name = name
         self.calories = calories
 
-    def _get_name(self):
+    def get_name(self):
         return self.name
 
-    def _set_name(self, name):
+    def set_name(self, name):
         self.name = name
 
-    def _get_calories(self):
+    def get_calories(self):
         return self.calories
 
-    def _set_calories(self, calories):
+    def set_calories(self, calories):
         self.calories = calories
 
     def is_healthy(self):
@@ -30,10 +30,10 @@ class JellyBean(Dessert):
         self.calories = calories
         self.flavor = flavor
 
-    def _get_flavor(self):
+    def get_flavor(self):
         return self.flavor
 
-    def _set_flavor(self, flavor):
+    def set_flavor(self, flavor):
         self.flavor = flavor
 
     def is_delicious(self):
