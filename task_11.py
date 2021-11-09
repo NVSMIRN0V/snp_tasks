@@ -1,23 +1,23 @@
 class Dessert:
     def __init__(self, name=None, calories=None):
-        self.__name = name
-        self.__calories = calories
+        self.name = name
+        self.calories = calories
 
-    def _get_name(self):
-        return self.__name
+    def get_name(self):
+        return self.name
 
     def _set_name(self, name):
-        self.__name = name
+        self.name = name
 
-    def _get_calories(self):
-        return self.__calories
+    def get_calories(self):
+        return self.calories
 
-    def _set_calories(self, calories):
-        self.__calories = calories
+    def set_calories(self, calories):
+        self.calories = calories
 
     def is_healthy(self):
-        if isinstance(self.__calories, (int, float)):
-            return self.__calories < 200
+        if isinstance(self.calories, (int, float)):
+            return self.calories < 200
         return False
 
     def is_delicious(self):
